@@ -1,0 +1,17 @@
+{% macro find() %}
+    <form action="/search" method="post" name="search_form">
+        <div class="layui-col-md3 search-box">
+            <div class="search-input-div">
+                <div class="layui-row">
+                    <div class="layui-col-md10 input-box">
+                        <input class="search-input" placeholder="请输入关键字进行搜索" name="kw" style="background-color: #eff0f1; color: black;">
+                    </div>
+                    <div class="layui-col-md2 search-btn-box">
+                        <img src="/static/imgs/icon/search.png" height="36" width="36"
+                             onclick="document.search_form.submit();"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endmacro %}
